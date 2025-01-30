@@ -12,21 +12,20 @@ const LocationItem = ({location}: any) => {
 
  return <MyMapMarker x= {location.x} y = {location.y} onClick = {handleClick}>
   <Box sx= {{
-    border: '2px solid #333', 
     width: '18px', 
     height: '18px',
-
-    lineHeight: '18px',
+    border: '1px solid #999',
     fontSize: '10px',
-    borderRadius: '14px',
+    borderRadius: '18px',
     textAlign: 'center',  
     justifyContent: 'center',
+    paddingLeft: '2px',
     alignItems: 'center',
     color: '#333',
     position: 'absolute',
     left: '-9px',
     top: '-9px',
-    background: '#fff'
+    // background: '#fff'
   }}>
    {location.buses.length} {location.id}
   </Box>

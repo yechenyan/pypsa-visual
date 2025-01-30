@@ -40,3 +40,4 @@ next-env.d.ts
 /datasource/*.nc
 base_s_39_lvopt___2050.nc
 /datasource
+test

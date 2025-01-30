@@ -16,6 +16,7 @@ const Arrows = () => {
       scene.removeLayer(layerRef.current)
     }
 
+
     layerRef.current = new LineLayer({
       zIndex: 0,
     })
@@ -26,16 +27,20 @@ const Arrows = () => {
       x1: 'endX',
       y1: 'endY',
     }})
-    .scale('count', {
-      type: 'quantile',
-    })
     .size(1)
     .shape('flowline')
-    .color('#000')
+    .color('#999')
+    .animate({
+      enable: true,
+    })
+    .on('click', () => {
+      console.log(5551)
+    })
+    .active(true)
 
     .style({
       opacity: 1,
-      gapWidth: 0,
+      gapWidth: 1,
       offsets: [10, 10],
       // strokeWidth: 1,
       // strokeOpacity: 1,

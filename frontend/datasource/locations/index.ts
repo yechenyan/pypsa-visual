@@ -12,7 +12,6 @@ type LocationItem = {
 type LocationsAtom = Record<string, LocationItem>;
 
 export const locationsAtom = atom<LocationsAtom>((get) => {
-  console.log(9991, busesOriginAtom);
   const busOrigin = get(busesOriginAtom);
 
   const buses = Object.values(busOrigin);

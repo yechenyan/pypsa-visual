@@ -14,13 +14,13 @@ const ArrowMarksItem = ({location}: any) => {
   <Box sx= {{
    
     fontSize: '8px',
-    // transform: `rotate(${location.degrees}deg)`,
+    // transform: `rotate(${location.degrees - 90}deg)`,
     color: 'rgba(0, 0, 0,.5)',
     position: 'absolute',
     left: '-7px',
     top: '-7px',
   }}>
-   {location.carriers}
+   {/* {location.carriers} */}
   </Box>
  </MyMapMarker>
 }
